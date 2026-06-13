@@ -1,0 +1,60 @@
+#!/bin/bash
+
+# Task 07 - Tree
+mkdir -p "task07/1910s"
+mkdir -p "task07/1920s"
+mkdir -p "task07/1930s"
+mkdir -p "task07/1940s"
+mkdir -p "task07/1950s"
+mkdir -p "task07/Professors"
+mkdir -p "task07/Solvay Conferences on Chemistry/Constitution and Configuration of Organic Molecules"
+mkdir -p "task07/Solvay Conferences on Chemistry/Isotopes/participants"
+mkdir -p "task07/Solvay Conferences on Chemistry/Oxygen, and its chemical and biological reactions"
+mkdir -p "task07/Solvay Conferences on Chemistry/Vitamins and Hormones"
+mkdir -p "task07/Solvay Conferences on Physics/Atoms and electrons"
+mkdir -p "task07/Solvay Conferences on Physics/Electric conductivity of metals and related problems"
+mkdir -p "task07/Solvay Conferences on Physics/Electrons and photons/participants"
+mkdir -p "task07/Solvay Conferences on Physics/Magnetism"
+mkdir -p "task07/Solvay Conferences on Physics/The structure of matter"
+mkdir -p "task07/Solvay Conferences on Physics/The theory of radiation and quanta"
+
+touch "task07/Professors/Frederic Swarts"
+touch "task07/Professors/Hendrik Lorentz"
+touch "task07/Professors/Paul Karrer"
+touch "task07/Professors/Paul Langevin"
+touch "task07/Professors/William Jackson Pope"
+
+touch "task07/Solvay Conferences on Physics/Electrons and photons/participants/A. Einstein"
+touch "task07/Solvay Conferences on Physics/Electrons and photons/participants/E. Schrodinger"
+touch "task07/Solvay Conferences on Physics/Electrons and photons/participants/H.A. Lorentz"
+touch "task07/Solvay Conferences on Physics/Electrons and photons/participants/M. Planck"
+touch "task07/Solvay Conferences on Physics/Electrons and photons/participants/M. Sklodowska-Curie"
+touch "task07/Solvay Conferences on Physics/Electrons and photons/participants/N. Bohr"
+touch "task07/Solvay Conferences on Physics/Electrons and photons/participants/W. Heisenberg"
+touch "task07/Solvay Conferences on Physics/Electrons and photons/participants/W.L. Bragg"
+
+ln -sf "../Solvay Conferences on Physics/The theory of radiation and quanta" "task07/1910s/1911"
+ln -sf "../Solvay Conferences on Physics/The structure of matter" "task07/1910s/1913"
+ln -sf "../Solvay Conferences on Physics/Atoms and electrons" "task07/1920s/1921"
+ln -sf "../Solvay Conferences on Physics/Electric conductivity of metals and related problems" "task07/1920s/1924"
+ln -sf "../Solvay Conferences on Physics/Electrons and photons" "task07/1920s/1927"
+ln -sf "../Solvay Conferences on Physics/Magnetism" "task07/1930s/1930"
+ln -sf "../Solvay Conferences on Chemistry/Constitution and Configuration of Organic Molecules" "task07/1930s/1931"
+ln -sf "../Solvay Conferences on Chemistry/Oxygen, and its chemical and biological reactions" "task07/1930s/1934"
+ln -sf "../Solvay Conferences on Chemistry/Vitamins and Hormones" "task07/1930s/1937"
+ln -sf "../Solvay Conferences on Chemistry/Isotopes" "task07/1940s/1947"
+
+ln -sf "../../Professors/William Jackson Pope" "task07/Solvay Conferences on Chemistry/Constitution and Configuration of Organic Molecules/chair"
+ln -sf "../../Professors/Paul Karrer" "task07/Solvay Conferences on Chemistry/Isotopes/chair"
+ln -sf "../../Professors/William Jackson Pope" "task07/Solvay Conferences on Chemistry/Oxygen, and its chemical and biological reactions/chair"
+ln -sf "../../Professors/Frederic Swarts" "task07/Solvay Conferences on Chemistry/Vitamins and Hormones/chair"
+ln -sf "../../Professors/Hendrik Lorentz" "task07/Solvay Conferences on Physics/Atoms and electrons/chair"
+ln -sf "../../Professors/Hendrik Lorentz" "task07/Solvay Conferences on Physics/Electric conductivity of metals and related problems/chair"
+ln -sf "../../Professors/Hendrik Lorentz" "task07/Solvay Conferences on Physics/Electrons and photons/chair"
+ln -sf "../../Professors/Paul Langevin" "task07/Solvay Conferences on Physics/Magnetism/chair"
+ln -sf "../../Professors/Hendrik Lorentz" "task07/Solvay Conferences on Physics/The structure of matter/chair"
+ln -sf "../../Professors/Hendrik Lorentz" "task07/Solvay Conferences on Physics/The theory of radiation and quanta/chair"
+
+# Task 08 - Tar
+mkdir -p task08
+tar -czf task08/task07.tgz task07
